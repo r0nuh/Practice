@@ -13,7 +13,8 @@ namespace PrimeNumbers
             Console.WriteLine($"Sum of primes till {number}: " + SumOfPrimes(number));
             Console.Write($"Prime numbers till {number}: ");
             PrintPrimes(number);
-            Console.WriteLine("Biggest prime number from the sum of prime numbers till 100: " + BiggestPrime());
+            Console.WriteLine("Biggest prime number as the sum of prime numbers till 100: " + BiggestPrime());
+            Console.WriteLine($"Biggest prime under {number} as the sum of prime numbers: " + BiggestPrime2(number));
 
             Console.Read();
         }
@@ -83,7 +84,30 @@ namespace PrimeNumbers
                         biggestPrime = sum;
                     }
                 }
+            }
 
+            return biggestPrime;
+        }
+
+        static int BiggestPrime2(int n)
+        {
+            int biggestPrime = 2;
+            int sum = 2;
+            int i = 3;
+
+            while (2 * biggestPrime < n)
+            {
+
+                if (IsPrime(i))
+                {
+                    sum += i;
+                    if (IsPrime(sum))
+                    {
+                        biggestPrime = sum;
+                    }
+                }
+
+                i += 2;
             }
 
             return biggestPrime;
