@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.csproj", "{E05A295C-D0A2-42C0-A5D9-1F4DAA0BC89B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.csproj", "{E05A295C-D0A2-42C0-A5D9-1F4DAA0BC89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary", "Binary\Binary.csproj", "{6B402CBA-2C77-428D-96A2-43F350CC2558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E05A295C-D0A2-42C0-A5D9-1F4DAA0BC89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E05A295C-D0A2-42C0-A5D9-1F4DAA0BC89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E05A295C-D0A2-42C0-A5D9-1F4DAA0BC89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
