@@ -62,12 +62,13 @@ namespace Binary
                 }
                 else if (binaryOfN[i] == 0 && count > 0)
                 {
-                    numberOfOnes.Add(count);
                     count = 0;
                 }
 
                 numberOfOnes.Add(count);
             }
+
+            numberOfOnes.Add(count);
 
             //max = numberOfOnes.Max();
             max = Max(numberOfOnes);
