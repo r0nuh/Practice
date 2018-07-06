@@ -68,8 +68,6 @@ namespace Binary
                 numberOfOnes.Add(count);
             }
 
-            numberOfOnes.Add(count);
-
             //max = numberOfOnes.Max();
             max = Max(numberOfOnes);
             return max;
