@@ -24,13 +24,21 @@ namespace Binary
             List<int> binary = new List<int>();
             int digit;
 
+            //while (n > 0)
+            //{
+            //    digit = n % 2;
+            //    binary.Insert(0, digit);
+            //    n /= 2;
+            //}
+
             while (n > 0)
             {
                 digit = n % 2;
-                binary.Insert(0, digit);
+                binary.Add(digit);
                 n /= 2;
             }
 
+            binary.Reverse();
             return binary;
         }
     }
