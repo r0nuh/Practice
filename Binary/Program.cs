@@ -19,7 +19,7 @@ namespace Binary
 
             Console.WriteLine();
             Console.WriteLine("The maximum number of 1's in the binary number: " + MaxNumberOfOnes(n));
-
+            Console.WriteLine("The maximum number of 1's in the binary number: " + MaxNoOfConsecutiveOnes(n));
 
             Console.Read();
         }
@@ -84,6 +84,25 @@ namespace Binary
                     max = values[i];
                 }
             }
+            return max;
+        }
+
+        static int MaxNoOfConsecutiveOnes(int n)
+        {
+            List<int> binary = ToBinary(n);
+            int count = 0;
+            int max = 1;
+
+            for (int i = 0; i < binary.Count; i++)
+            {
+                if (binary[i] == 1)
+                    ++count;
+                else if (binary[i] == 0 && count > 0)
+                    count = 0;
+
+                max = Math.Max(count, max);
+            }
+
             return max;
         }
     }
