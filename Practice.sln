@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumbers", "PrimeNumber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary", "Binary\Binary.csproj", "{6B402CBA-2C77-428D-96A2-43F350CC2558}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourglass", "Hourglass\Hourglass.csproj", "{8B43F0E2-A407-41CA-93A1-B4291A1E451D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListInsertFunc", "LinkedListInsertFunc\LinkedListInsertFunc.csproj", "{294C46C2-7424-4FEE-BF52-87C63103EAC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B402CBA-2C77-428D-96A2-43F350CC2558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B43F0E2-A407-41CA-93A1-B4291A1E451D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B43F0E2-A407-41CA-93A1-B4291A1E451D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B43F0E2-A407-41CA-93A1-B4291A1E451D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B43F0E2-A407-41CA-93A1-B4291A1E451D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
