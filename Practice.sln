@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourglass", "Hourglass\Hour
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListInsertFunc", "LinkedListInsertFunc\LinkedListInsertFunc.csproj", "{294C46C2-7424-4FEE-BF52-87C63103EAC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeHeight", "BinarySearchTreeHeight\BinarySearchTreeHeight.csproj", "{45138FAA-56E8-4599-A7E7-4FD8798DF431}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{294C46C2-7424-4FEE-BF52-87C63103EAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45138FAA-56E8-4599-A7E7-4FD8798DF431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45138FAA-56E8-4599-A7E7-4FD8798DF431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45138FAA-56E8-4599-A7E7-4FD8798DF431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45138FAA-56E8-4599-A7E7-4FD8798DF431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
