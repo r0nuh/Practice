@@ -6,27 +6,46 @@ namespace PrimeNumbers
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number bigger than 1: ");
-            int number = Int32.Parse(Console.ReadLine());
+            try
+            {
+                Console.Write("Enter a number bigger than 1: ");
+                int number = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Is it a prime number? " + IsPrime(number));
-            Console.WriteLine($"Sum of primes till {number}: " + SumOfPrimes(number));
-            Console.Write($"Prime numbers till {number}: ");
-            PrintPrimes(number);
-            Console.WriteLine("Biggest prime number as the sum of prime numbers till 100: " + BiggestPrime());
-            Console.WriteLine($"Biggest prime under {number} as the sum of prime numbers: " + BiggestPrime2(number));
+                Console.WriteLine("Is it a prime number? " + IsPrime(number));
+                Console.WriteLine($"Sum of primes till {number}: " + SumOfPrimes(number));
+                Console.Write($"Prime numbers till {number}: ");
+                PrintPrimes(number);
+                Console.WriteLine("Biggest prime number as the sum of prime numbers till 100: " + BiggestPrime());
+                Console.WriteLine($"Biggest prime under {number} as the sum of prime numbers: " + BiggestPrime2(number));
+
+            }
+            catch (ArgumentException)
+            {
+
+                Console.WriteLine("The entered number is not bigger than 1!");
+            }
+
 
             Console.Read();
         }
 
         static bool IsPrime(int number)
         {
+            if (number < 2)
+            {
+                throw new ArgumentException();
+            }
+
             if (number > 2 && number % 2 == 0)
             {
                 return false;
             }
+            else if (number == 2)
+            {
+                return true;
+            }
 
-            for (int i = 3; i < number; i += 2)
+            for (int i = 3; i < number; i += 2)  //i*i < number is faster
             {
                 if (number % i == 0)
                 {
@@ -37,9 +56,10 @@ namespace PrimeNumbers
             return true;
         }
 
-        static int SumOfPrimes(int n)
+        static string SumOfPrimes(int n)
         {
-            int sum = 2;
+            int sum = n < 3 ? 0 : 2;
+            //int sum = 2;
 
             for (int i = 3; i < n; i += 2)
             {
@@ -49,24 +69,34 @@ namespace PrimeNumbers
                 }
             }
 
-            return sum;
+            string result = sum == 0 ? "there are no primes under 2" : sum.ToString();
+            return result;
+            //return sum;
         }
 
         static void PrintPrimes(int n)
         {
-            Console.Write(2 + " ");
-            int sum = 2;
-
-            for (int i = 3; i < n; i += 2)
+            if (n == 2)
             {
-                if (IsPrime(i))
-                {
-                    Console.Write(i + " ");
-                    sum += i;
-                }
+                Console.WriteLine("there are no primes under 2");
             }
-            Console.WriteLine();
-            Console.WriteLine("Sum of the primes: " + sum);
+            else
+            {
+
+                Console.Write(2 + " ");
+                int sum = 2;
+
+                for (int i = 3; i < n; i += 2)
+                {
+                    if (IsPrime(i))
+                    {
+                        Console.Write(i + " ");
+                        sum += i;
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine("Sum of the primes: " + sum);
+            }
         }
 
         static int BiggestPrime()
