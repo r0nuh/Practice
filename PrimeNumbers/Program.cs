@@ -13,10 +13,12 @@ namespace PrimeNumbers
 
                 Console.WriteLine("Is it a prime number? " + IsPrime(number));
                 Console.WriteLine($"Sum of primes till {number}: " + SumOfPrimes(number));
+                Console.WriteLine();
                 Console.Write($"Prime numbers till {number}: ");
                 PrintPrimes(number);
+                Console.WriteLine();
                 Console.WriteLine("Biggest prime number as the sum of prime numbers till 100: " + BiggestPrime());
-                Console.WriteLine($"Biggest prime under {number} as the sum of prime numbers: " + BiggestPrime2(number));
+                Console.WriteLine($"Biggest prime under or equal to {number} as the sum of prime numbers: " + BiggestPrime2(number));
 
             }
             catch (ArgumentException)
@@ -58,8 +60,7 @@ namespace PrimeNumbers
 
         static string SumOfPrimes(int n)
         {
-            int sum = n < 3 ? 0 : 2;
-            //int sum = 2;
+            int sum = n < 3 ? 0 : 2;            
 
             for (int i = 3; i < n; i += 2)
             {
@@ -70,8 +71,7 @@ namespace PrimeNumbers
             }
 
             string result = sum == 0 ? "there are no primes under 2" : sum.ToString();
-            return result;
-            //return sum;
+            return result;            
         }
 
         static void PrintPrimes(int n)
