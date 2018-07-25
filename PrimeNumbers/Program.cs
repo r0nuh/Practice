@@ -19,14 +19,11 @@ namespace PrimeNumbers
                 Console.WriteLine();
                 Console.WriteLine("Biggest prime number as the sum of prime numbers till 100: " + BiggestPrime());
                 Console.WriteLine($"Biggest prime under or equal to {number} as the sum of prime numbers: " + BiggestPrime2(number));
-
             }
             catch (ArgumentException)
             {
-
                 Console.WriteLine("The entered number is not bigger than 1!");
             }
-
 
             Console.Read();
         }
@@ -82,7 +79,6 @@ namespace PrimeNumbers
             }
             else
             {
-
                 Console.Write(2 + " ");
                 int sum = 2;
 
@@ -127,7 +123,6 @@ namespace PrimeNumbers
 
             while (2 * biggestPrime < n)
             {
-
                 if (IsPrime(i))
                 {
                     sum += i;
@@ -136,7 +131,7 @@ namespace PrimeNumbers
                         biggestPrime = sum;
                     }
                 }
-
+                
                 i += 2;
             }
 
